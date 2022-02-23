@@ -1,0 +1,8 @@
+{
+  "./pages/**/*.{ts,tsx}": [
+    "eslint --fix --max-warnings 0"
+  ],
+  "./styles/**/*.{css,scss}": [
+    "npx stylelint --fix --max-warnings 0"
+  ]
+}
