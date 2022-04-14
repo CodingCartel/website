@@ -1,0 +1,25 @@
+$font-size_base_ul: 16;
+$font-size_low_ul: 10;
+$font-size_high_ul: 32;
+
+$viewport-thin_ul: 480;
+$viewport-medium_ul: 768;
+$viewport-regular_ul: 1024;
+$viewport-large_ul: 1440;
+
+$fluid-typo-vp-min-size_ul: 375;
+
+$font-size_base: #{$font-size_base_ul}px;
+$font-size_low: #{$font-size_low_ul}px;
+$font-size_high: #{$font-size_high_ul}px;
+
+$viewport-thin: #{$viewport-thin_ul}px;
+$viewport-medium: #{$viewport-medium_ul}px;
+$viewport-regular: #{$viewport-regular_ul}px;
+$viewport-large: #{$viewport-large_ul}px;
+
+$fluid-typo-vp-min-size: #{$fluid-typo-vp-min-size_ul}px;
+
+// COLORS
+$color_dark: #212121;
+$color_light: #dedede;

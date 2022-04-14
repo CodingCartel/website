@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+// function to help responsive combined with fluid typography
+@function rem($pixel, $fontSize: $font-size_base) {
+  @return math.div($pixel, $fontSize) rem;
+}
