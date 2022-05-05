@@ -6,7 +6,7 @@ const HeroBlock = () => {
     <section>
       what the hell is going on
       <h1>Bole222&apos;s Next.js project sample</h1>
-      </section>
+    </section>
   )
 }
 

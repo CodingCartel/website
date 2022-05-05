@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install",
+    "prepare": "node scripts/prepare_husky.js",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext js",
     "format": "prettier --write ."
