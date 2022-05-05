@@ -4,8 +4,7 @@ import React from 'react'
 const HeroBlock = () => {
   return (
     <section>
-      what the hell is going on
-      <h1>Bole222&apos;s Next.js project sample</h1>
+      <h1>Bienvenue sur le coding carte </h1>
     </section>
   )
 }
