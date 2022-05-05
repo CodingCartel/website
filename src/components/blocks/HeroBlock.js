@@ -4,7 +4,7 @@ import React from 'react'
 const HeroBlock = () => {
   return (
     <section>
-      <h1>Bienvenue sur le coding cartel ! </h1>
+      <h1>Bienvenue sur le coding carte </h1>
     </section>
   )
 }
