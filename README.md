@@ -55,7 +55,7 @@ The project have specific organisation.
 The pre-commit hook is used to check the project before it is commited.
 the hook is checking **[the linting](#linting), [the style guide](#style-guide)** and **[build](#build)**.
 
-### husky
+### Husky
 
 To pre-commit, we're using the [husky](https://typicode.github.io/husky/) tool.
 
@@ -64,14 +64,14 @@ Pre-commit script is located in the `.husky/pre-commit` file.
 Because sometime on linux, the script is not executed because it do not have right authorisations. There is a script `scripts/prepare_husky.js` that change chmod only for linux.
 This script is executed at the `npm install` command execution.
 
-## <a name="linting">linting</a>
+## <a name="linting">Linting</a>
 
 The linting is checking the code with eslint.
 The project is mostly respecting the [airbnb style guide](https://github.com/airbnb/javascript).
 But without **semincolons** and **arrow function**.
 Check configuration file `.eslintrc.js`
 
-## <a name="formatting">formatting</a>
+## <a name="formatting">Formatting</a>
 
 The formatting is checking the code with prettier.
 there are basics rules for the code.
@@ -100,7 +100,7 @@ main.scss and core folder.
 
 all the content of styles folder is globally imported in the project.
 
-## <a name="style-components">style components</a>
+## <a name="style-components">Style components</a>
 
 next to a component, add a scss file with the same name as the component.
 Then import it in your component.
@@ -118,7 +118,7 @@ As variables, if you want to use global mixins, add them in the `styles/core/mix
 
 If you want to use global fonts, add them in the `styles/core/fonts.scss` file.
 
-## <a name="functions">functions</a>
+## <a name="functions">Functions</a>
 
 If you want to use global functions, add them in the `styles/core/functions.scss` file.
 
