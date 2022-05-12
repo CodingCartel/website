@@ -11,10 +11,10 @@ a {
   text-decoration: none;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   overflow: auto;
-}
+} */
 
 html {
   @include size_manager(
