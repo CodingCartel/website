@@ -5,6 +5,7 @@ const HeroBlock = () => {
   return (
     <section className={styles.heroBlock}>
       <h1 className={styles.heading}>Bienvenue sur le coding cartel </h1>
+      va y ici je change les bails pour tester
     </section>
   )
 }
