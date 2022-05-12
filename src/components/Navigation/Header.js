@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Header = () => {
-  return <div>je suis le Header</div>
+  const [clicked, setClicked] = useState(false)
+  const handleButtonClick = () => {
+    setClicked(true)
+  }
+  return (
+    <div>
+      <div>
+        onClick={handleButtonClick}
+        style={{ color: 'red', fontSize: '50px' }}
+      </div>
+
+      {clicked && <div>Je suis le header</div>}
+    </div>
+  )
 }
 
 export default Header
