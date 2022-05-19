@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'Roboto-medium', sans-serif;
-  font-weight: 500;
-
-  src: url('/public/fonts/Roboto-Medium.woff2') format('woff2');
+  font-family: 'silkamono';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local(silkamono),
+    url('/fonts/silkamono-regular-webfont.woff2') format('woff2');
 }

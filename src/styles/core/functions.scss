@@ -1,6 +1,11 @@
 @use 'sass:math';
 
-// function to help responsive combined with fluid typography
+// function that convert px to rem depending on the font-size
+/**
+ * @param {px} px size in px
+ * @param {number} optional fontSize in px
+ * @returns {number} in rem unit
+ */
 @function rem($pixel, $fontSize: $font-size_base) {
-  @return math.div($pixel, $fontSize) rem;
+  @return (math.div($pixel, $fontSize) * 1rem);
 }
