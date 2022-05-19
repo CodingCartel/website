@@ -7,11 +7,9 @@ const Header = () => {
   }
   return (
     <div>
-      <div>
-        onClick={handleButtonClick}
-        style={{ color: 'red', fontSize: '50px' }}
-      </div>
-
+      <button type="button" onClick={handleButtonClick}>
+        my button
+      </button>
       {clicked && <div>Je suis le header</div>}
     </div>
   )
