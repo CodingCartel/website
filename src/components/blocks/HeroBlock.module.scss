@@ -1,9 +1,51 @@
 .heroBlock {
+  overflow: auto;
   height: 100vh;
   width: 100vw;
-  background-color: $color_dark;
+  background-color: $color_dark-green;
 }
 
 .heading {
-  color: $color_light;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+
+  width: max-content;
+
+  margin-top: rem(138px);
+  margin-left: rem(44px);
+  margin-bottom: 0;
+
+  font-size: rem(48px);
+  letter-spacing: rem(-1.2px);
+  line-height: rem(59px);
+
+  .headingTop {
+    color: $color_main-green;
+  }
+
+  .headingBottom {
+    margin-left: auto;
+    color: $color_greener-white;
+  }
+}
+
+.paragraph {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: rem(262px);
+
+  font-size: rem(18px);
+  color: $color_greener-white;
+
+  margin-top: rem(76px);
+  margin-left: rem(44px);
+
+  .projectLink {
+    display: block;
+    width: 100%;
+
+    color: $color-main-green;
+    text-decoration: underline;
+  }
 }

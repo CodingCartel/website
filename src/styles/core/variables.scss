@@ -1,3 +1,5 @@
+// /!\ IF YOU CHANGE A VALUE MAKE SURE TO CHANGE IT IN PX AS WELL /!\
+
 $font-size_base_ul: 16;
 $font-size_low_ul: 10;
 $font-size_high_ul: 32;
@@ -9,17 +11,20 @@ $viewport-large_ul: 1440;
 
 $fluid-typo-vp-min-size_ul: 375;
 
-$font-size_base: #{$font-size_base_ul}px;
-$font-size_low: #{$font-size_low_ul}px;
-$font-size_high: #{$font-size_high_ul}px;
+$font-size_base: 16px;
+$font-size_low: 10px;
+$font-size_high: 32px;
 
-$viewport-thin: #{$viewport-thin_ul}px;
-$viewport-medium: #{$viewport-medium_ul}px;
-$viewport-regular: #{$viewport-regular_ul}px;
-$viewport-large: #{$viewport-large_ul}px;
+$viewport-thin: 480px;
+$viewport-medium: 768px;
+$viewport-regular: 1024px;
+$viewport-large: 1440px;
 
-$fluid-typo-vp-min-size: #{$fluid-typo-vp-min-size_ul}px;
+$fluid-typo-vp-min-size: 375px;
 
 // COLORS
-$color_dark: #212121;
-$color_light: #dedede;
+$color_main-green: #1ab81a;
+$color_full-white: #ffffff;
+$color_full-black: #000000;
+$color_greener-white: #cdd9d1;
+$color_dark-green: #202220;
