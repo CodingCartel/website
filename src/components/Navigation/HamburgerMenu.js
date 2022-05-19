@@ -7,9 +7,13 @@ const HamburgerMenu = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <div>
-      <button type="button" onClick={HandleClick}>
-        button
+    <div className={styles.navigationButton}>
+      <button
+        className={styles.buttonHamburgerHidden}
+        type="button"
+        onClick={HandleClick}
+      >
+        <div className={styles.hamburgerIcon} />
       </button>
       {isOpen && <div className={styles.navigation}>je suis la div</div>}
     </div>
