@@ -1,11 +1,11 @@
-# <a name="coding-cartel-font-end">CODING CARTEL FONT-END</a>
+# <a name="coding-cartel-front-end">CODING CARTEL FRONT-END</a>
 
-This is the font-end of the coding cartel project made with next-js.
+This is the front-end of the coding cartel project made with next-js.
 Please read the [project structure](#project-structure) before you start to edit.
 
 # Table of Contents
 
-- [CODING CARTEL FONT-END](#coding-cartel-font-end)
+- [CODING CARTEL FRONT-END](#coding-cartel-front-end)
 - [Getting started](#getting-started)
 - [Project configuration](#project-config)
   - [Pre-commit](#pre-commit)
