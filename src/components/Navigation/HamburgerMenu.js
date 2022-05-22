@@ -17,7 +17,14 @@ const HamburgerMenu = () => {
         <div className={styles.hamburgerIcon2} />
         <div className={styles.hamburgerIcon3} />
       </button>
-      {isOpen && <div className={styles.navigationMenu}>je suis la div</div>}
+
+      {isOpen && (
+        <div className={styles.navigationMenu}>
+          <a href="#accueil">&lt;accueil&gt;</a> <br />
+          <a href="#projets">&lt;projets&gt;</a> <br />
+          <a href="#contact">&lt;contact&gt;</a> <br />
+        </div>
+      )}
     </div>
   )
 }

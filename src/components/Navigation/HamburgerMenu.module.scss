@@ -1,10 +1,3 @@
-.navigationMenu {
-  padding-top: 4rem;
-  background-color: #7fc37f;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
 .navigationContainer {
   position: fixed;
   background-color: $color_dark-green;
@@ -17,11 +10,8 @@
   z-index: 2;
   padding-top: 1rem;
   padding-left: 1rem;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid red; */
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburgerIcon1,
@@ -34,4 +24,19 @@
   transition: all 0.5s ease-in-out;
   position: relative;
   margin-bottom: 0.5rem;
+}
+.navigationMenu {
+  padding-top: 4rem;
+  background-color: #7fc37f;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigationMenu a {
+  color: #ffe2e2;
+  font-size: 48px;
 }
