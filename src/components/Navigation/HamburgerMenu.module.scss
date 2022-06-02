@@ -1,5 +1,5 @@
 .navigationContainer {
-  position: fixed;
+  position: absolute;
   background-color: $color_dark-green;
 }
 .navigationButton {
@@ -28,13 +28,14 @@
 .navigationMenu {
   padding-top: 4rem;
   background-color: #7fc37f;
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .navigationMenu a {
   color: #ffe2e2;
