@@ -7,23 +7,31 @@ import styles from './HamburgerMenu.module.scss'
 */
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const background = useRef(null)
+  const [isClicked, setIsClicked] = useState(false)
+  const navMenu = useRef()
   const closeAnimation = () => {
     const t1 = gsap.timeline({
       onComplete: () => {
         setIsOpen(!isOpen)
       }
     })
-    t1.to(background.current, { opacity: 0, duration: 1 })
+    t1.to(navMenu.current, { opacity: 0, duration: 1 })
+    gsap.to(`.${styles.hamburgerIcon2}`, { opacity: 1 })
   }
   const openAnimation = () => {
-    gsap.to(background.current, { opacity: 1, duration: 1 })
+    gsap.to(navMenu.current, { opacity: 1, duration: 1 })
+    gsap.to(`.${styles.hamburgerIcon2}`, { opacity: 1 })
+    gsap.to(`.${styles.hamburgerIcon1}`, { rotation: -45, top: 10, left: 8 })
+    gsap.to(`.${styles.hamburgerIcon3}`, { rotation: 45, top: -10, left: 8 })
   }
   useEffect(() => {
-    openAnimation()
+    if (isClicked) {
+      openAnimation()
+    }
   })
 
   const HandleClick = () => {
+    setIsClicked(!isClicked)
     if (isOpen) {
       closeAnimation()
     } else {
@@ -44,7 +52,7 @@ const HamburgerMenu = () => {
       </button>
 
       {isOpen && (
-        <div className={styles.navigationMenu} ref={background}>
+        <div className={styles.navigationMenu} ref={navMenu}>
           <a href="#accueil">&lt;accueil&gt;</a> <br />
           <a href="#projets">&lt;projets&gt;</a> <br />
           <a href="#contact">&lt;contact&gt;</a> <br />
