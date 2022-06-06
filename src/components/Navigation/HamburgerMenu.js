@@ -15,14 +15,40 @@ const HamburgerMenu = () => {
         setIsOpen(!isOpen)
       }
     })
-    t1.to(navMenu.current, { opacity: 0, duration: 1 })
-    gsap.to(`.${styles.hamburgerIcon2}`, { opacity: 1 })
+    t1.to(navMenu.current, { opacity: 0, duration: 0.5 })
+    gsap.to(`.${styles.hamburgerIcon1}`, {
+      rotation: 0,
+      x: 0,
+      y: 0
+    })
+    gsap.to(`.${styles.hamburgerIcon2}`, {
+      x: 0,
+      opacity: 1,
+      marginBottom: 0.3
+    })
+    gsap.to(`.${styles.hamburgerIcon3}`, {
+      rotation: 0,
+      x: 0,
+      y: 8
+    })
   }
   const openAnimation = () => {
-    gsap.to(navMenu.current, { opacity: 1, duration: 1 })
-    gsap.to(`.${styles.hamburgerIcon2}`, { opacity: 1 })
-    gsap.to(`.${styles.hamburgerIcon1}`, { rotation: -45, top: 10, left: 8 })
-    gsap.to(`.${styles.hamburgerIcon3}`, { rotation: 45, top: -10, left: 8 })
+    gsap.to(navMenu.current, { opacity: 1, duration: 0.5 })
+    gsap.to(`.${styles.hamburgerIcon1}`, {
+      rotation: -45,
+      x: 0,
+      y: 8
+    })
+    gsap.to(`.${styles.hamburgerIcon2}`, {
+      x: -50,
+      opacity: 0,
+      marginBottom: 0
+    })
+    gsap.to(`.${styles.hamburgerIcon3}`, {
+      rotation: 45,
+      x: 0,
+      y: -3
+    })
   }
   useEffect(() => {
     if (isClicked) {
