@@ -15,10 +15,8 @@ const HeroBlock = () => {
         <span>
           Rejoins-nous et développe tes propres projets ou ceux des autres !
         </span>
-        <Link href="/project">
-          <a href="/#" className={styles.projectLink}>
-            projets
-          </a>
+        <Link href="/project" className={styles.projectLink}>
+          projets
         </Link>
       </p>
     </section>

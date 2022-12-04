@@ -1,22 +1,22 @@
-# <a name="coding-cartel-font-end">CODING CARTEL FONT-END</a>
+# <a name="coding-cartel-frontend">Coding Cartel Frontend</a>
 
-This is the font-end of the coding cartel project made with next-js.
-Please read the [project structure](#project-structure) before you start to edit.
+This is the frontend of the coding cartel project made with NextJS.
+Please read the [project structure](#project-structure) before you start editing.
 
 # Table of Contents
 
-- [CODING CARTEL FONT-END](#coding-cartel-font-end)
+- [Coding Cartel Frontend](#coding-cartel-frontend)
 - [Getting started](#getting-started)
 - [Project configuration](#project-config)
   - [Pre-commit](#pre-commit)
-  - [linting](#linting)
-  - [formatting](#formatting)
-- [Stying](#stying)
+  - [Linting](#linting)
+  - [Formatting](#formatting)
+- [Styling](#styling)
   - [style components](#style-components)
   - [Variables](#variables)
   - [Mixins](#mixins)
   - [Fonts](#fonts)
-  - [functions](#functions)
+  - [Functions](#functions)
   - [Media queries](#media-queries)
   - [Normalizer](#normalizer)
   - [Global styles](#global-styles)
@@ -61,7 +61,7 @@ To pre-commit, we're using the [husky](https://typicode.github.io/husky/) tool.
 
 Pre-commit script is located in the `.husky/pre-commit` file.
 
-Because sometime on linux, the script is not executed because it do not have right authorisations. There is a script `scripts/prepare_husky.js` that change chmod only for linux.
+Because sometimes on Linux, the script is not executed because it do not have right authorisations. There is a script `scripts/prepare_husky.js` that changes chmod only for linux.
 This script is executed at the `npm install` command execution.
 
 ## <a name="linting">Linting</a>
@@ -90,7 +90,7 @@ You might configure your editor to auto-format the code at save.
 
 Check configuration file `.prettierrc.json`
 
-# <a name="styling">Stying</a>
+# <a name="styling">Styling</a>
 
 On that project we're using Scss with no styling library or framework.
 
@@ -132,7 +132,7 @@ It is based on the mobile first approach.
 The normalizer is used to normalize the project's styles.
 You might not need to update it.
 
-It is based on [that repo](github.com/necolas/normalize.css)
+It is based on [that repo](github.com/necolas/normalize.css).
 
 ## <a name="global-styles">Global styles</a>
 
@@ -142,5 +142,13 @@ If you want to update it go ahead, but take care of side effects.
 
 # <a name="contributors">Contributors</a>
 
-- Basile LECOUTUIRER [@bolex222](https://github.com/bolex222)
+## Former contributors
+
+- Basile LECOUTURIER [@bolex222](https://github.com/bolex222)
 - Mathéo NOEL [@iKeaght](https://github.com/iKeaght)
+
+## Current contributors
+
+*No contributors for now*
+
+Want your name here? Help developing the project!
