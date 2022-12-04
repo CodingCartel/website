@@ -9,6 +9,7 @@ const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isClicked, setIsClicked] = useState(false)
   const navMenu = useRef()
+  const animationSpeed = 0.5
   const closeAnimation = () => {
     const t1 = gsap.timeline({
       onComplete: () => {
@@ -17,37 +18,69 @@ const HamburgerMenu = () => {
     })
     t1.to(navMenu.current, { opacity: 0, duration: 0.5 })
     gsap.to(`.${styles.hamburgerIcon1}`, {
-      rotation: 0,
-      x: 0,
-      y: 0
+      keyframes: [
+        {
+          rotate: 0
+        },
+        {
+          top: 0,
+          delay: animationSpeed
+        }
+      ],
+      duration: animationSpeed
     })
     gsap.to(`.${styles.hamburgerIcon2}`, {
       x: 0,
       opacity: 1,
-      marginBottom: 0.3
+      delay: animationSpeed,
+      ease: 'back.out(3)'
     })
     gsap.to(`.${styles.hamburgerIcon3}`, {
-      rotation: 0,
-      x: 0,
-      y: 8
+      keyframes: [
+        {
+          rotate: 0
+        },
+        {
+          top: 26,
+          delay: animationSpeed
+        }
+      ],
+      duration: animationSpeed
     })
   }
   const openAnimation = () => {
     gsap.to(navMenu.current, { opacity: 1, duration: 0.5 })
     gsap.to(`.${styles.hamburgerIcon1}`, {
-      rotation: -45,
-      x: 0,
-      y: 8
+      keyframes: [
+        {
+          top: 13
+        },
+        {
+          rotation: -45,
+          delay: animationSpeed
+        }
+      ],
+      duration: animationSpeed,
+      delay: animationSpeed
     })
     gsap.to(`.${styles.hamburgerIcon2}`, {
       x: -50,
       opacity: 0,
-      marginBottom: 0
+      ease: 'back.in(3)',
+      duration: animationSpeed
     })
     gsap.to(`.${styles.hamburgerIcon3}`, {
-      rotation: 45,
-      x: 0,
-      y: -3
+      keyframes: [
+        {
+          top: 13
+        },
+        {
+          rotation: 45,
+          delay: animationSpeed
+        }
+      ],
+      duration: animationSpeed,
+      delay: animationSpeed
     })
   }
   useEffect(() => {
@@ -71,6 +104,7 @@ const HamburgerMenu = () => {
         className={styles.navigationButton}
         type="button"
         onClick={HandleClick}
+        open={isOpen}
       >
         <div className={styles.hamburgerIcon1} />
         <div className={styles.hamburgerIcon2} />
