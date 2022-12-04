@@ -1,0 +1,61 @@
+.navigationContainer {
+  position: absolute;
+  background-color: $color_dark-green;
+}
+.navigationButton {
+  --hamburger-bar-height: 2px;
+  --top-position: 0;
+  --middle-position: calc(50% - calc(var(--hamburger-bar-height)));
+  --bottom-position: calc(var(--menu-height) - var(--hamburger-bar-height) * 2);
+  --menu-height: 30px;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 2;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  height: var(--menu-height);
+  width: 40px;
+}
+
+.hamburgerIcon1,
+.hamburgerIcon2,
+.hamburgerIcon3 {
+  --pos: var(--middle-position);
+
+  width: 33px;
+  height: var(--hamburger-bar-height);
+  background: #cdd9d1;
+  border-radius: 5px;
+  position: absolute;
+  top: var(--pos);
+}
+
+.hamburgerIcon1 {
+  --pos: 0;
+}
+
+.hamburgerIcon3 {
+  --pos: var(--bottom-position);
+}
+
+.navigationMenu {
+  padding-top: 4rem;
+  background-color: #7fc37f;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.navigationMenu a {
+  color: #ffe2e2;
+  font-size: 48px;
+}
